@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,81 +9,91 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>SIG</title>
 </head>
+
 <body>
     <main>
         <section class="left">
-            <header>
-                <img class="logo" src="assets/logoIF.png" alt="Logo IF">
-                <span>IF Sudeste MG - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</span> 
-            </header>
+            <div class="content-left">
+                <nav class="links">
+                    <ul>
+                        <li onclick="selectItem('SIGAA')">
+                            <span name="SIGAA" class="material-icons item-selected">school</span>
+                            <button name="SIGAA" class="nav-item item-selected" href="#">SIGAA</button>
+                        </li>
 
-            <nav class="links">
-                <ul>
-                    <li>
-                        <span class="material-icons">school</span>
-                        <a class="nav-item" href="https://www.w3schools.com/" target="_blank">SIGAA</a>
-                    </li>
+                        <li onclick="selectItem('SIPAC')">
+                            <span name="SIPAC" class="material-icons">manage_accounts</span>
+                            <button name="SIPAC" class="nav-item" href="#">SIPAC</button>
+                        </li>
 
-                    <li>
-                        <span class="material-icons">manage_accounts</span>
-                        <a class="nav-item" href="https://www.w3schools.com/" target="_blank">SIPAC</a>
-                    </li>
+                        <li onclick="selectItem('SIGRH')">
+                            <span name="SIGRH" class="material-icons">badge</span>
+                            <button name="SIGRH" class="nav-item" href="#">SIGRH</button>
+                        </li>
+                        <li onclick="selectItem('SIGPP')">
+                            <span name="SIGPP" class="material-icons">schema</span>
+                            <button name="SIGPP" class="nav-item" href="#">SIGPP</button>
+                        </li>
 
-                    <li>
-                        <span class="material-icons">manage_accounts</span>
-                        <a class="nav-item" href="https://www.w3schools.com/" target="_blank">SIGRH</a>
-                    </li>
-                    <li> 
-                        <span class="material-icons">manage_accounts</span> 
-                        <a class="nav-item" href="https://www.w3schools.com/" target="_blank">SIGPP</a>
-                    </li>
+                        <li onclick="selectItem('SIGED')">
+                            <span name="SIGED" class="material-icons">description</span>
+                            <button name="SIGED" class="nav-item" href="#">SIGED</button>
+                        </li>
 
-                    <li> 
-                        <span class="material-icons">manage_accounts</span> 
-                        <a class="nav-item" href="https://www.w3schools.com/" target="_blank">SIGED</a>
-                    </li>
+                        <li onclick="selectItem('SIGAdmin')">
+                            <span name="SIGAdmin" class="material-icons">settings_input_component</span>
+                            <button name="SIGAdmin" class="nav-item" href="#">SIGAdmin</button>
+                        </li>
 
-                    <li> 
-                        <span class="material-icons">manage_accounts</span> 
-                        <a class="nav-item" href="https://www.w3schools.com/" target="_blank">SIGAdmin</a>
-                    </li>
+                    </ul>
+                </nav>
 
-                </ul>
-            </nav>
-
-            <img class="illustration" src="assets/undraw_education_f8ru.png"  width="400px" alt="school">
-
-            <footer class="footer-left">
-                <p>SIGAA | Instituto Federal do Sudeste de MG - 3257-4100 | Copyright © 2006-2022</p>
-            </footer>
+                <img class="illustration" src="assets/undraw_education_f8ru.png" width="400px" alt="school">
+            </div>
         </section>
 
         <section class="right">
-            <h1 class="title" >SIGAA</h1>
+            <div class="content-right">
 
-            <form>
-                <div class="container-input">
-                    <label for="flogin">Login</label><br>
-                    <input type="text" id="flogin" name="flogin"><br>
-                </div>
+                <header>
+                    <img class="logo" src="assets/logoIF.png" alt="Logo IF">
+                    <span class="system-info-header">IF Sudeste MG - SIGAA - Sistema Integrado de Gestão de Atividades
+                        Acadêmicas</span>
+                </header>
+                <h1 class="title">SIGAA</h1>
 
-                <div class="container-input">
-                    <label for="lpassword">Senha</label><br>
-                    <input type="password" id="lpassword" name="lpassword">
-                </div>
-                <a href="">Dificuldades ao acessar?</a>
+                <form>
+                    <div class="container-input">
+                        <label for="flogin">Login</label><br>
+                        <input type="text" id="flogin" name="flogin"><br>
+                    </div>
 
-                <div class="container-buttons">
-                    <button class="button login" >Entrar</button>
-                    <button class="button signup">Cadastre-se</button>
-                </div>
-            </form>
+                    <div class="container-input">
+                        <label for="lpassword">Senha</label><br>
+                        <input type="password" id="lpassword" name="lpassword">
+                    </div>
+                    <a href="">Dificuldades ao acessar?</a>
 
-            <footer class="footer-right">
-                <span>IF Sudeste MG - sig10.ifsudestemg.edu.br.sig10</span>
-                <span>v3.32.17</span>
-            </footer>
+                    <div class="container-buttons">
+                        <button class="button login">Entrar</button>
+                        <button class="button signup">Cadastre-se</button>
+                    </div>
+                </form>
+
+                <footer class="footer-right">
+                    <div class="container-text-footer">
+                        <span>SIGAA | Instituto Federal do Sudeste de MG - 3257-4100 | Copyright © 2006-2022</span>
+                        <span>
+                            IF Sudeste MG -
+                            sig10.ifsudestemg.edu.br.sig10
+                        </span>
+                    </div>
+                    <span>v3.32.17</span>
+                </footer>
+            </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
+
 </html>
