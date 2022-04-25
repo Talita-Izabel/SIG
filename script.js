@@ -1,6 +1,6 @@
 /**
  * @description Função que altera o título do login conforme o item selecionado
- * @param {*} titleSelected item do menu selecionado (SIGAA, SIPAC, SIGRH, SIGPP, SIGED, SIGAdmin)
+ * @param {String} titleSelected item do menu selecionado (SIGAA, SIPAC, SIGRH, SIGPP, SIGED, SIGAdmin)
  */
 function setLoginTitle(titleSelected) {
   var title = document.getElementsByClassName("title");
@@ -9,7 +9,7 @@ function setLoginTitle(titleSelected) {
 
 /**
  * @description Função que remove a classe item-selected dos itens do menu que não seja o item selecionado
- * @param {*} exceptionItem item do menu selecionado que não terá o estilo excluído (SIGAA, SIPAC, SIGRH, SIGPP, SIGED, SIGAdmin)
+ * @param {String} exceptionItem item do menu selecionado que não terá o estilo excluído (SIGAA, SIPAC, SIGRH, SIGPP, SIGED, SIGAdmin)
  */
 function removeOtherSelectedItems(exceptionItem) {
   const navItens = [];
@@ -34,7 +34,7 @@ function removeOtherSelectedItems(exceptionItem) {
 
 /**
  * @description Função que adiciona a classe item-selected ao item selecionado
- * @param {*} selected item do menu selecionado (SIGAA, SIPAC, SIGRH, SIGPP, SIGED, SIGAdmin)
+ * @param {String} selected item do menu selecionado (SIGAA, SIPAC, SIGRH, SIGPP, SIGED, SIGAdmin)
  */
 function selectItem(selected) {
   const itemSelected = document.getElementsByName(selected);
