@@ -54,7 +54,10 @@ function selectItem(selected) {
  */
 function handleMenu() {
   const dropMenu = document.querySelector(".drop-menu");
+  const iconMenu = document.querySelector(".icon-menu");
   dropMenu.style.left = "0";
+  iconMenu.style.top = "14px";
+  iconMenu.style.left = "14px";
 }
 
 /**
@@ -62,5 +65,8 @@ function handleMenu() {
  */
 function closeMenu() {
   const dropMenu = document.querySelector(".drop-menu");
+  const iconMenu = document.querySelector(".icon-menu");
   dropMenu.style.left = "-1000px";
+  iconMenu.style.top = "12px";
+  iconMenu.style.left = "12px";
 }
