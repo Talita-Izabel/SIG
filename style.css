@@ -140,12 +140,16 @@ main {
 
 .icon-menu {
   position: absolute;
-  top: 5px;
-  left: 10px;
-  padding: 10px;
-  color: #276678;
-  width: 100px;
+  top: 12px;
+  left: 12px;
+  padding: 7px;
+  color: #fff;
+  background-color:  #276678;
+  opacity: 0.5;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 10px;
   display: none !important;
+  transition: 0.3 ease-in-out all; 
 }
 
 .logo {
@@ -298,6 +302,7 @@ footer {
   z-index: 9999;
   transition: all 0.7s ease-in-out;
 }
+
 .links-drop-menu {
   padding-top: 40px;
   display: flex;
@@ -327,8 +332,8 @@ footer {
 
 .close-menu {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   color: #fff;
 }
 
@@ -423,5 +428,21 @@ footer {
   .container-input input {
     width: 100%;
     height: 40px;
+  }
+
+  .links-drop-menu ul li {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 1650px) {
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .illustration {
+    width: 450px;
+    left: 100px;
   }
 }
