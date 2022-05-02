@@ -46,4 +46,21 @@ function selectItem(selected) {
     : itemSelected[1].classList.add("item-selected");
   removeOtherSelectedItems(selected);
   setLoginTitle(selected);
+  closeMenu();
+}
+
+/**
+ * @description Função responsavel por fazer com que o menu seja exibido
+ */
+function handleMenu() {
+  const dropMenu = document.querySelector(".drop-menu");
+  dropMenu.style.left = "0";
+}
+
+/**
+ * @description Função responsavel por fazer com que o menu seja fechado
+ */
+function closeMenu() {
+  const dropMenu = document.querySelector(".drop-menu");
+  dropMenu.style.left = "-1000px";
 }
