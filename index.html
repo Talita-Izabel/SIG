@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <title>SIG</title>
-  </head>
 
-  <body>
-    <main>
-      <section class="left">
-        <div class="content-left">
-          <nav class="links">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <title>SIG</title>
+</head>
+
+<body>
+  <main>
+    <section class="left">
+      <div class="content-left">
+        <nav class="links">
+          <ul>
+            <li onclick="selectItem('SIGAA')">
+              <span name="SIGAA" class="material-icons item-selected">school</span>
+              <button name="SIGAA" class="nav-item item-selected" href="#">
+                SIGAA
+              </button>
+            </li>
+
+            <li onclick="selectItem('SIPAC')">
+              <span name="SIPAC" class="material-icons">manage_accounts</span>
+              <button name="SIPAC" class="nav-item" href="#">SIPAC</button>
+            </li>
+
+            <li onclick="selectItem('SIGRH')">
+              <span name="SIGRH" class="material-icons">badge</span>
+              <button name="SIGRH" class="nav-item" href="#">SIGRH</button>
+            </li>
+            <li onclick="selectItem('SIGPP')">
+              <span name="SIGPP" class="material-icons">schema</span>
+              <button name="SIGPP" class="nav-item" href="#">SIGPP</button>
+            </li>
+
+            <li onclick="selectItem('SIGED')">
+              <span name="SIGED" class="material-icons">description</span>
+              <button name="SIGED" class="nav-item" href="#">SIGED</button>
+            </li>
+
+            <li onclick="selectItem('SIGAdmin')">
+              <span name="SIGAdmin" class="material-icons">settings_input_component</span>
+              <button name="SIGAdmin" class="nav-item" href="#">
+                SIGAdmin
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <img class="illustration" src="assets/undraw_education_f8ru.png" alt="school" />
+      </div>
+    </section>
+
+    <section class="right">
+      <div class="content-right">
+        <span class="material-icons icon-menu" onclick="handleMenu()">menu</span>
+        <div class="drop-menu">
+          <span class="material-icons close-menu" onclick="closeMenu()">close
+          </span>
+          <nav class="links-drop-menu">
             <ul>
               <li onclick="selectItem('SIGAA')">
-                <span name="SIGAA" class="material-icons item-selected"
-                  >school</span
-                >
-                <button name="SIGAA" class="nav-item item-selected" href="#">
-                  SIGAA
-                </button>
+                <span name="SIGAA" class="material-icons">school</span>
+                <button name="SIGAA" class="nav-item" href="#">SIGAA</button>
               </li>
 
               <li onclick="selectItem('SIPAC')">
@@ -53,119 +92,65 @@
               </li>
 
               <li onclick="selectItem('SIGAdmin')">
-                <span name="SIGAdmin" class="material-icons"
-                  >settings_input_component</span
-                >
+                <span name="SIGAdmin" class="material-icons">settings_input_component</span>
                 <button name="SIGAdmin" class="nav-item" href="#">
                   SIGAdmin
                 </button>
               </li>
             </ul>
           </nav>
-
-          <img
-            class="illustration"
-            src="assets/undraw_education_f8ru.png"
-            alt="school"
-          />
         </div>
-      </section>
-
-      <section class="right">
-        <div class="content-right">
-            <span class="material-icons icon-menu" onclick="handleMenu()"
-            >menu</span
-          >
-          <div class="drop-menu">
-            <span class="material-icons close-menu" onclick="closeMenu()"
-              >close
-            </span>
-            <nav class="links-drop-menu">
-              <ul>
-                <li onclick="selectItem('SIGAA')">
-                  <span name="SIGAA" class="material-icons">school</span>
-                  <button name="SIGAA" class="nav-item" href="#">SIGAA</button>
-                </li>
-
-                <li onclick="selectItem('SIPAC')">
-                  <span name="SIPAC" class="material-icons"
-                    >manage_accounts</span
-                  >
-                  <button name="SIPAC" class="nav-item" href="#">SIPAC</button>
-                </li>
-
-                <li onclick="selectItem('SIGRH')">
-                  <span name="SIGRH" class="material-icons">badge</span>
-                  <button name="SIGRH" class="nav-item" href="#">SIGRH</button>
-                </li>
-                <li onclick="selectItem('SIGPP')">
-                  <span name="SIGPP" class="material-icons">schema</span>
-                  <button name="SIGPP" class="nav-item" href="#">SIGPP</button>
-                </li>
-
-                <li onclick="selectItem('SIGED')">
-                  <span name="SIGED" class="material-icons">description</span>
-                  <button name="SIGED" class="nav-item" href="#">SIGED</button>
-                </li>
-
-                <li onclick="selectItem('SIGAdmin')">
-                  <span name="SIGAdmin" class="material-icons"
-                    >settings_input_component</span
-                  >
-                  <button name="SIGAdmin" class="nav-item" href="#">
-                    SIGAdmin
-                  </button>
-                </li>
-              </ul>
-            </nav>
+        <header>
+          <div class="container-text-header">
+            <img class="logo" src="assets/logoIF.png" alt="Logo IF" />
+            <span class="system-info-header"><strong>IF Sudeste MG </strong>- Sistema Integrado de Gestão de
+              Atividades Acadêmicas</span>
           </div>
-          <header>
-            <div class="container-text-header">
-              <img class="logo" src="assets/logoIF.png" alt="Logo IF" />
-              <span class="system-info-header"
-                ><strong>IF Sudeste MG </strong>- Sistema Integrado de Gestão de
-                Atividades Acadêmicas</span
-              >
-            </div>
+          <div class="container-toggle">
+
+            <label class="switch">
+              <input type="checkbox" id="toggle-theme" onchange="setTheme()">
+              <span class="slider round"></span>
+            </label>
             <span>v3.32.17</span>
-          </header>
+          </div>
+        </header>
 
-          <form>
-            <h1 class="title">SIGAA</h1>
-            <div class="container-input">
-              <label for="flogin">Login</label><br />
-              <input type="text" id="flogin" name="flogin" /><br />
-            </div>
+        <form>
+          <h1 class="title">SIGAA</h1>
+          <div class="container-input">
+            <label for="flogin">Login</label><br />
+            <input type="text" id="flogin" name="flogin" /><br />
+          </div>
 
-            <div class="container-input">
-              <label for="lpassword">Senha</label><br />
-              <input type="password" id="lpassword" name="lpassword" />
-            </div>
-            <a href="">Dificuldades ao acessar?</a>
+          <div class="container-input">
+            <label for="lpassword">Senha</label><br />
+            <input type="password" id="lpassword" name="lpassword" />
+          </div>
+          <a href="">Dificuldades ao acessar?</a>
 
-            <div class="container-buttons">
-              <button class="button login">Entrar</button>
-              <button class="button signup">Cadastre-se</button>
-            </div>
-          </form>
+          <div class="container-buttons">
+            <button class="button login">Entrar</button>
+            <button class="button signup">Cadastre-se</button>
+          </div>
+        </form>
 
-          <footer>
-            <div class="footer-right">
-              <span
-                >SIGAA | Instituto Federal do Sudeste de MG - 3257-4100 |
-                Copyright © 2006-2022</span
-              >
-              <span> IF Sudeste MG - sig10.ifsudestemg.edu.br.sig10 </span>
-            </div>
+        <footer>
+          <div class="footer-right">
+            <span>SIGAA | Instituto Federal do Sudeste de MG - 3257-4100 |
+              Copyright © 2006-2022</span>
+            <span> IF Sudeste MG - sig10.ifsudestemg.edu.br.sig10 </span>
+          </div>
 
-            <div class="footer-mobile">
-              <span> IF Sudeste MG - sig10.ifsudestemg.edu.br.sig10 </span>
-              <span>Copyright © 2006-2022</span>
-            </div>
-          </footer>
-        </div>
-      </section>
-    </main>
-    <script src="script.js"></script>
-  </body>
+          <div class="footer-mobile">
+            <span> IF Sudeste MG - sig10.ifsudestemg.edu.br.sig10 </span>
+            <span>Copyright © 2006-2022</span>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
 </html>

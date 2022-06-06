@@ -70,3 +70,25 @@ function closeMenu() {
   iconMenu.style.top = "12px";
   iconMenu.style.left = "12px";
 }
+
+function setTheme() {
+  const themeSelected = document.getElementById("toggle-theme").checked
+    ? "dark"
+    : "light";
+  var root = document.querySelector(":root");
+  if (themeSelected === "light") {
+    root.style.setProperty("--primary", "#d3e0ea");
+    root.style.setProperty("--secondary", "#1687a7");
+    root.style.setProperty("--contrast", "#276678");
+    root.style.setProperty("--light", "#f6f5f5");
+    root.style.setProperty("--letter", "#276678");
+    root.style.setProperty("--item-selected", "#276678");
+  } else {
+    root.style.setProperty("--primary", "#292c30");
+    root.style.setProperty("--secondary", "#3f4648");
+    root.style.setProperty("--contrast", "#00587a");
+    root.style.setProperty("--light", "#cdd9e5");
+    root.style.setProperty("--letter", "#cdd9e5");
+    root.style.setProperty("--item-selected", "#91d544");
+  }
+}
