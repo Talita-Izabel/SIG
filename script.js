@@ -72,7 +72,7 @@ function closeMenu() {
 }
 
 function setTheme() {
-  const themeSelected = document.getElementById("toggle-theme").checked
+  const themeSelected = document.getElementById("toggle").checked
     ? "dark"
     : "light";
   var root = document.querySelector(":root");
@@ -92,3 +92,7 @@ function setTheme() {
     root.style.setProperty("--item-selected", "#91d544");
   }
 }
+
+const toggle = document.querySelector('.toggle');
+const hours = new Date().getHours();
+toggle.checked = hours > 7 && hours < 20;
